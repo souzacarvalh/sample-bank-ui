@@ -1,0 +1,18 @@
+$red: #dc3545;
+
+.navbar {
+    border-bottom: 2px solid $red; 
+    min-height: 80px;
+}
+
+a.nav-link:hover {
+    border-bottom: 1px solid $red;
+}
+
+footer {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    position: fixed;
+    border-top: 2px solid $red; 
+}

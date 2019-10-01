@@ -1,0 +1,52 @@
+<nav class="navbar navbar-lg navbar-expand-sm navbar-dark bg-dark p-3 mb-5">
+    <div class="container">
+        <a href="banking" class="navbar-brand font-weight-bolder">
+            <i class="fas fa-university"></i> Sample Bank
+        </a>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="navbarCollapse" class="collapse navbar-collapse">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item px-2 active">
+                    <a href="banking" class="nav-link">ACCOUNT</a>
+                </li>
+                <li class="nav-item px-2">
+                    <a href="credit" class="nav-link">CREDIT</a>
+                </li>
+                <li class="nav-item px-2">
+                    <a href="investment" class="nav-link">INVESTMENT</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item dropdown mr-3">
+                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">
+                        <span><i class="fas fa-user"></i>&nbsp;Admin</span>
+                    </a>
+                    <div class="dropdown-menu">
+                        <a href="profile" class="dropdown-item"><i class="fas fa-user-circle"></i> Profile</a>
+                        <a href="settings" class="dropdown-item"><i class="fas fa-cog"></i> Settings</a>
+                        <a href="login" class="dropdown-item"><i class="fas fa-user-times"></i> Logout</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container">
+    <router-outlet></router-outlet>
+</div>
+
+<footer id="main-footer" class="bg-dark text-white p-4">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <hr>
+                <p class="lead text-center">
+                    Copyright &copy; <span id="year"></span> | Sample Bank
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
